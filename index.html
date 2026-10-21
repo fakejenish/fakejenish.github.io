@@ -1,29 +1,81 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jenish Malla</title><meta name="description" content="The joke above is that my site is peak.... For a more rigrous and formal introduction go to the "About Me" section">
-<meta property="og:title" content="Jenish Malla"><meta property="og:description" content="The joke above is that my site is peak.... For a more rigrous and formal introduction go to the "About Me" section"><meta property="og:type" content="website"><meta property="og:image" content="https://sites.google.com/sitesv-images-rt/AMxu72sz3TacNTVAq_XIzCHwULqXtLnPaIJdTj80thknKOTr3LV2_f4bvRcqOreRA-nEP10ExGAYdsrzkusTVkuda0BaXIXYwQCCnaX5VAuSLjN8Xh365Q1VxtS74OX1yoAkSpNVx2vGC0ZtzoZ7aYxLaUoD9nvqlHPWVmjlk3dUx8YOaVUr_chDDZuh7yVuyvA=w16383">
+<title>Jenish Malla</title>
+<meta name="description" content="Jenish Malla - freshman at KAIST from Nepal. Maths, money, quantum behaviour and prisoner's dilemma.">
+<meta property="og:title" content="Jenish Malla"><meta property="og:type" content="website">
+<meta property="og:description" content="Jenish Malla - freshman at KAIST from Nepal. Maths, money, quantum behaviour and prisoner's dilemma.">
+<meta property="og:image" content="https://fakejenish.github.io/assets/img/logo.png">
 <link rel="icon" href="assets/img/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap">
-<link rel="stylesheet" href="assets/style.css"></head><body>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+:root{--bg:#f6f7fb;--panel:#fff;--ink:#0f1a30;--mute:#5a6680;--acc:#2457d6;--acc2:#e8eefc;--line:#e1e6f0;--r:16px;--sh:0 1px 2px rgba(15,26,48,.05),0 8px 24px rgba(15,26,48,.07)}
+@media(prefers-color-scheme:dark){:root{--bg:#0a101e;--panel:#121a2d;--ink:#eaeffa;--mute:#9aa8c4;--acc:#7aa5ff;--acc2:#18233f;--line:#222d48;--sh:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.7 Newsreader,Georgia,serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.brand,nav,.btn,.eyebrow,.social a{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+a{color:var(--acc);text-underline-offset:3px}a:focus-visible{outline:3px solid var(--acc);outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:var(--panel);padding:8px 12px;z-index:9}
+.top{position:sticky;top:0;z-index:5;display:flex;gap:1.2rem;align-items:center;padding:.7rem clamp(1rem,4vw,3rem);background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:.65rem;font-weight:800;font-size:1.1rem;color:var(--ink);text-decoration:none;white-space:nowrap;letter-spacing:-.01em}
+.logo{width:36px;height:36px;border-radius:50%;object-fit:cover;background:var(--line);box-shadow:0 0 0 2px var(--panel),0 0 0 3px var(--line)}
+nav{display:flex;gap:.2rem;overflow-x:auto;scrollbar-width:none;margin-left:auto}nav::-webkit-scrollbar{display:none}
+nav a{padding:.45rem .85rem;border-radius:999px;color:var(--mute);text-decoration:none;font-size:.88rem;font-weight:500;white-space:nowrap;transition:.15s}
+nav a:hover{color:var(--ink);background:var(--acc2)}nav a[aria-current=page]{background:var(--ink);color:var(--bg)}
+main{max-width:1020px;margin:0 auto;padding:3rem clamp(1rem,4vw,2rem) 4rem}
+h1{font-size:clamp(2.6rem,6.5vw,4.4rem);line-height:1.05;letter-spacing:-.03em;margin:.1em 0 .35em;font-weight:800}
+h2{font-size:1.65rem;margin:0 0 1rem;font-weight:700;letter-spacing:-.02em;line-height:1.2}
+h3{font-size:1.15rem;font-weight:700}
+p,li{max-width:66ch}
+figure{margin:0}figcaption{color:var(--mute);font-size:.92rem;margin-top:.6rem}
+img{display:block;max-width:100%;height:auto;border-radius:var(--r);background:var(--line)}img.logo{border-radius:50%}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:center;padding:1rem 0 3.5rem}
+.eyebrow{display:inline-block;margin:0 0 1rem;padding:.3rem .8rem;border-radius:999px;background:var(--acc2);color:var(--acc);font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.lead{font-size:1.4rem;line-height:1.4;color:var(--ink);font-weight:600;margin-bottom:1rem}
+.hero p{color:var(--mute)}.hero p.lead{color:var(--ink)}
+.hero-img img{width:100%;border-radius:24px;box-shadow:var(--sh)}
+.cta{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.6rem}
+.btn{display:inline-block;padding:.7rem 1.3rem;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem;transition:.15s}
+.btn:hover{transform:translateY(-2px);border-color:var(--acc)}.btn.primary{background:var(--acc);border-color:var(--acc);color:#fff}
+section+section{margin-top:3.5rem}
+.events{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem}
+.events figure{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:.8rem .8rem 1.2rem;box-shadow:var(--sh);transition:.2s}
+.events figure:hover{transform:translateY(-4px)}
+.events img{aspect-ratio:4/3;object-fit:cover;border-radius:12px}
+.events h3{margin:1rem .5rem .2rem}.events figcaption{margin:0 .5rem}
+.find{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem;align-items:start}
+.map iframe{width:100%;height:340px;border:1px solid var(--line);border-radius:20px;box-shadow:var(--sh)}
+.map p{color:var(--mute);font-size:.95rem;margin:.7rem 0 0}
+.yap{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:1.6rem;box-shadow:var(--sh)}.yap h2{font-size:1.3rem}
+.social{display:flex;flex-direction:column;gap:.6rem;margin:0}
+.social a{padding:.7rem 1rem;border:1px solid var(--line);border-radius:12px;text-decoration:none;font-weight:600;color:var(--ink);transition:.15s}
+.social a::after{content:" \2197";color:var(--acc)}.social a:hover{border-color:var(--acc);background:var(--acc2)}
+footer{margin-top:2rem;border-top:1px solid var(--line);padding:2rem clamp(1rem,4vw,3rem);text-align:center;background:var(--panel)}
+footer h3{margin:0;font-size:1rem;font-weight:500;color:var(--mute)}
+@media(max-width:760px){body{font-size:17px}.hero,.find{grid-template-columns:1fr}.hero-img{order:-1}.top{flex-direction:column;align-items:flex-start;gap:.5rem}nav{margin-left:0;width:100%}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style></head><body>
 <a class="skip" href="#main">Skip to main content</a>
-<header class="top"><a class="brand" href="index.html"><img class="logo" src="assets/img/logo.png" data-fb="https://sites.google.com/sitesv-images-rt/AMxu72sz3TacNTVAq_XIzCHwULqXtLnPaIJdTj80thknKOTr3LV2_f4bvRcqOreRA-nEP10ExGAYdsrzkusTVkuda0BaXIXYwQCCnaX5VAuSLjN8Xh365Q1VxtS74OX1yoAkSpNVx2vGC0ZtzoZ7aYxLaUoD9nvqlHPWVmjlk3dUx8YOaVUr_chDDZuh7yVuyvA=w16383" alt="" loading="eager"><span>Jenish Malla</span></a><nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="about-me.html">About Me</a><a href="achievements.html">Achievements</a><a href="classes.html">Classes I am taking</a><a href="theorems.html">Intresting Theorems</a><a href="puzzles.html">Zero knowledge questions/puzzles</a><a href="korae-side-lore.html">Korae side lore</a></nav></header>
+<header class="top"><a class="brand" href="index.html"><img class="logo" src="assets/img/logo.png" alt="" loading="eager"><span>Jenish Malla</span></a><nav aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="about-me.html">About Me</a><a href="achievements.html">Achievements</a><a href="classes.html">Classes I am taking</a><a href="theorems.html">Intresting Theorems</a><a href="puzzles.html">Zero knowledge questions/puzzles</a><a href="korae-side-lore.html">Korae side lore</a></nav></header>
 <main id="main">
-<section class="hero"><h1>My site</h1><p>The joke above is that my site is peak.... For a more rigrous and formal introduction go to the "<a href="about-me.html">About Me</a>" section</p>
-<figure><img class="wide" src="assets/img/hero.png" data-fb="https://sites.google.com/sitesv-images-rt/AMxu72uEeH8nqk-7CPPqtWjopdN6WYwVDongblisclqsRl-tz4glC3jE3pvRzFt7dMwDEONHsp5ZMrHZsfuM72NVqe9bqSLgq1_K6r4KDPDQ_2OiBr-m5EX0mudkgApg2owrGicnp7axKVadiYckyyaazI7_BExB1giySS0l0exytorbwsZ1bgPfJIOhYHoZiyvi5N4ldg47JQnyjxFRYPwhLb4iuMtjQJdx6PEer1cC=w1280" alt="Malatang" loading="eager"><figcaption>Malatang:&gt; (Free coke for KAIST students btw)</figcaption></figure></section>
-<h2>Jenish Malla</h2>
-<p>Hi, welcome to my site mysterious traveler.</p>
+<section class="hero">
+<div class="hero-text"><p class="eyebrow">Freshman at KAIST &middot; From Nepal</p>
+<h1>Jenish Malla</h1>
+<p class="lead">Hi, welcome to my site mysterious traveler.</p>
 <p>I am Jenish from Nepal and currently a freshman at KAIST.</p>
 <p>I like Maths, money, weird things like quantum behaviour, prisioner's dilema and also my friends say I love arguing :&gt;</p>
 <p>I can yap alot and I yap officially for The KAIST Herald newspaper.</p>
 <p>I hope to learn more about every(fun)thing this world has to offer</p>
-<p>Note worthy things that has happened recently:</p>
+<p class="cta"><a class="btn primary" href="about-me.html">About Me</a><a class="btn" href="achievements.html">Achievements</a></p></div>
+<figure class="hero-img"><img src="assets/img/hero.png" alt="Malatang" loading="eager"><figcaption>Malatang:&gt; (Free coke for KAIST students btw)</figcaption></figure>
+</section>
+<section><h2>Note worthy things that has happened recently:</h2>
 <div class="events">
-<figure><h3>First Club/Job</h3><img class="" src="assets/img/article.png" data-fb="https://sites.google.com/sitesv-images-rt/AMxu72tuqt2Nbhlk-aOnI-u83LhpZOQkyp67nfDqIaltUcYEgqzwXcqfUSIWSuZsAva-qHeiS3_P5LWW3-QmrjV6xjFlXwvgVEgb27wJPGy1YtuBbyZWv9R1gVgMvFOmCdNX1nACU1DtoZQA1TcNVOjz7FsRsbP2SOtRDhXksBVlh8Aw_4PeK44p793uHUyNcZNebS2yp56DeiR1bg1-SkcwEDUN9UPJOur_usnVXutNCRQ=w1280" alt="First article" loading="lazy"><figcaption>First article :&gt;</figcaption></figure>
-<figure><h3>Got Into KAIST Yayy!!</h3><img class="" src="assets/img/kaist.png" data-fb="https://sites.google.com/sitesv-images-rt/AMxu72vcaHuGUpK8nHkZAWxj5Zjvq6MmJYBmBQfgHFKHkiuwpADI2nJts1-ImcD9BgYt77rOx71yakzDFD1kBt14uc88CMclQS5D-nWtEKER5m0G9qRJJwTWylc_fo9DlzUpGO4iDr1YZ587N0ViXtWpeARY9Y4cK7gPcYVxPgZjiVwP7gXUR6GlEqg9Nog--y_ut1Py5lP7HfFWhOZqCss1czIFTSpfU-6a1248S-9a=w1280" alt="KAIST" loading="lazy"><figcaption>Full ride :&gt;.</figcaption></figure>
-<figure><h3>No idea.</h3><img class="" src="assets/img/noidea.png" data-fb="https://sites.google.com/sitesv-images-rt/AMxu72vhbCP6sKwF0H-XvNISd_GIdnROwxVELBuq-Gee32lKq9ljjeBl2ZEdSgUfdlKrmunyqf3QlPhNBeZ7vh3pOt2DySh6HUKXiR0nFnSrhoLWfJjyM0uz5bb4RbW8wLMCYpvE4r9VAmNlEdR6in_1L8UqJlONibEzZ5VniIIZeFQRTjimfPkcGZBXuGzneJlUKe9bBMp3h3sYIByvRkA5WD1E4wlK5lAgm54pVoPeIjc=w1280" alt="" loading="lazy"><figcaption>unrelated</figcaption></figure></div>
-<div class="map"><iframe title="KAIST dorm map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?hl=en-US&amp;ll=36.373794,127.357599&amp;output=embed&amp;q=36.373794,127.357599&amp;z=17"></iframe><p>My college dorm if you wanna say hi (dont come fr 😭)</p></div>
-<p>Better digital place to yap:</p>
-<p class="social"><a href="https://www.instagram.com/fakejenish/?hl=en-in">Instagram</a><a href="https://www.linkedin.com/in/fakejenish/">LinkedIn</a><a href="https://www.facebook.com/jenish.malla.180">Facebook</a></p></main>
-<footer><h3>Get in touch at <a href="mailto:jenish@kaist.ac.kr">jenish@kaist.ac.kr</a> or <a href="mailto:collegejenish@gmail.com">collegejenish@gmail.com</a></h3></footer>
-<script src="assets/main.js"></script></body></html>
+<figure><img src="assets/img/article.png" alt="First article" loading="lazy"><h3>First Club/Job</h3><figcaption>First article :&gt;</figcaption></figure>
+<figure><img src="assets/img/kaist.png" alt="KAIST" loading="lazy"><h3>Got Into KAIST Yayy!!</h3><figcaption>Full ride :&gt;.</figcaption></figure>
+<figure><img src="assets/img/noidea.png" alt="" loading="lazy"><h3>No idea.</h3><figcaption>unrelated</figcaption></figure></div></section>
+<section class="find"><div class="map"><iframe title="KAIST dorm map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?hl=en-US&amp;ll=36.373794,127.357599&amp;output=embed&amp;q=36.373794,127.357599&amp;z=17"></iframe><p>My college dorm if you wanna say hi (dont come fr &#128557;)</p></div>
+<div class="yap"><h2>Better digital place to yap:</h2><p class="social"><a href="https://www.instagram.com/fakejenish/?hl=en-in">Instagram</a><a href="https://www.linkedin.com/in/fakejenish/">LinkedIn</a><a href="https://www.facebook.com/jenish.malla.180">Facebook</a></p></div></section>
+</main>
+<footer><h3>Get in touch at <a
